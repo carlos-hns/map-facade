@@ -39,18 +39,27 @@ public class SIG {
         System.out.println();
     }
 
-        public void getFolhaDePagamento() {
+    public void getFolhaDePagamento() {
         System.out.println("Folha de pagamento: " + this.financeiro.balancoDeContas());
     }
 
     // Professores
+    public void getProfessores(){
+        System.out.println("Professores: " + this.professores.getProfessores());
+    }
 
     // Almaxorifado
+    public void getEstoque(){
+        System.out.println("Estoque: " + this.almoxarifado.getEstoque().toString());
+    }
+    public void getpedidos(){
+        System.out.println("Pedidos: " + this.almoxarifado.getPedidos().toString());
+    }
 
     // Infraestrutura
 
     public void getAlocacoesDeSalas() {
-        System.out.println("Alocações dde salas: ");
+        System.out.println("Alocações de salas: ");
         this.imprimirLista(this.infraestrutura.getAlocacaoDasSalas());
     }
 

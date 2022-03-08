@@ -8,7 +8,7 @@ public class Main {
 
         // Financeiro
         sig.getBalancoDeContas();
-        //sig.getFolhaDePagamento();
+        sig.getFolhaDePagamento();
 
         // Alunos
         sig.getHistoricoDoAluno("01");
@@ -16,6 +16,14 @@ public class Main {
 
         // Infraestrutura
         sig.getAlocacoesDeSalas();
+
+        //professores
+        sig.getProfessores();
+
+        //almoxarifado
+        sig.getEstoque();
+        sig.getpedidos();
+
 
     }
 }

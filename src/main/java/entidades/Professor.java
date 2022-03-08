@@ -44,4 +44,18 @@ public class Professor {
     public void setTempoDeCasa(String tempoDeCasa) {
         this.tempoDeCasa = tempoDeCasa;
     }
+    @Override
+        public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+            builder.append(this.nome);
+            builder.append(" - ");
+            builder.append("Disciplina: ");
+            builder.append(this.disciplina);
+            builder.append(" - ");
+            builder.append("Tempo de casa: ");
+            builder.append(this.tempoDeCasa);
+            return builder.toString();
+        }
+
 }
