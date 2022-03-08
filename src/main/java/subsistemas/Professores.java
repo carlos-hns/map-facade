@@ -6,21 +6,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Professores {
-    private List<Professor> professores = new ArrayList<>();
 
-    public void addProfessor(long id, String nome, String disciplina, String tempo){
-        Professor professor = new Professor(id,nome,disciplina,tempo);
+    public List<Professor> getProfessoresDeUmaDisciplina(String disciplina) {
+        List<Professor> professoresDeUmaDisciplina = new ArrayList<>();
 
-        professores.add(professor);
+        professoresDeUmaDisciplina.add(new Professor("01", "Antonio", "Matematica", "1 Ano"));
+        professoresDeUmaDisciplina.add(new Professor("02", "Fábio", "Matematica", "5 Anos"));
+
+        return professoresDeUmaDisciplina;
     }
 
-    public List<Professor> getProfessores() {
-        
-        professores.add(new Professor(1l, "Antonio", "Matematica", "1 Ano"));
-        professores.add(new Professor(2l, "Fábio", "Introdução ao inferno", "5 Anos"));
-        professores.add(new Professor(3l, "Sabrina", "MAP", "3 Anos"));
-        professores.add(new Professor(4l, "Demetrio", "IA", "2 Anos"));
-          
-        return professores;
+    public List<Professor> getProfessoresComMesmoTempoDeCasa(String tempoDeCasa) {
+        List<Professor> professoresComTempoDeCasa = new ArrayList<>();
+
+        professoresComTempoDeCasa.add(new Professor("01", "Antonio", "Matematica", "1 Ano"));
+        professoresComTempoDeCasa.add(new Professor("02", "Fábio", "Criptografia", "1 Ano"));
+        professoresComTempoDeCasa.add(new Professor("02", "Nathan", "Teste de Software", "1 Ano"));
+
+        return professoresComTempoDeCasa;
     }
+
 }

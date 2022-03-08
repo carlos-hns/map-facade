@@ -35,18 +35,18 @@ public class SIG {
     // Financeiro
 
     public void getBalancoDeContas() {
-        System.out.println("Balanço de contas: " + this.financeiro.balancoDeContas());
+        System.out.println("Balanço de contas: " + this.financeiro.getBalancoDeContas());
         System.out.println();
     }
 
     public void getFolhaDePagamento() {
-        System.out.println("Folha de pagamento: " + this.financeiro.balancoDeContas());
+        System.out.println("Folha de pagamento: " + this.financeiro.getBalancoDeContas());
     }
 
     // Professores
-    public void getProfessores(){
-        System.out.println("Professores: " + this.professores.getProfessores());
-    }
+//    public void getProfessores(){
+//        System.out.println("Professores: " + this.professores.getProfessores());
+//    }
 
     // Almaxorifado
     public void getEstoque(){

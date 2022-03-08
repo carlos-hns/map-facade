@@ -6,21 +6,12 @@ import java.util.ArrayList;
 
 public class Financeiro {
     ArrayList<Pagamento> pagamentos = new ArrayList();
-    
-    
-    public Pagamento gerarFolhaDePagamento(String destinatario, double valor) {
-        pagamentos.add(new Pagamento("01", 1400.00));
-        
-        for (Pagamento pagamento:
-                pagamentos) {
-            if(pagamento.getId().equals(destinatario)){
-                return pagamento;
-            }
-        }
-        return null;
+
+    public Pagamento getFolhaDePagamentoPeloId(String idDestinatario) {
+        return new Pagamento(idDestinatario, 1400.00);
     }
 
-    public double balancoDeContas() {
+    public double getBalancoDeContas() {
             
         double valorTotal = 0;
         

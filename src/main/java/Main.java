@@ -18,7 +18,7 @@ public class Main {
         sig.getAlocacoesDeSalas();
 
         //professores
-        sig.getProfessores();
+        //sig.getProfessores();
 
         //almoxarifado
         sig.getEstoque();
