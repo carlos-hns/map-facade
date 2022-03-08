@@ -20,7 +20,7 @@ public class Professores {
         List<Professor> professoresComTempoDeCasa = new ArrayList<>();
 
         professoresComTempoDeCasa.add(new Professor("01", "Antonio", "Matematica", "1 Ano"));
-        professoresComTempoDeCasa.add(new Professor("02", "Fábio", "Criptografia", "1 Ano"));
+        professoresComTempoDeCasa.add(new Professor("02", "José", "Criptografia", "1 Ano"));
         professoresComTempoDeCasa.add(new Professor("02", "Nathan", "Teste de Software", "1 Ano"));
 
         return professoresComTempoDeCasa;

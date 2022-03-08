@@ -18,7 +18,8 @@ public class Main {
         sig.getAlocacoesDeSalas();
 
         //professores
-        //sig.getProfessores();
+        sig.getProfessoresPorDisciplina("Matematica");
+        sig.getProfessoresPorTempo("1 Ano");
 
         //almoxarifado
         sig.getEstoque();

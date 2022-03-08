@@ -44,9 +44,12 @@ public class SIG {
     }
 
     // Professores
-//    public void getProfessores(){
-//        System.out.println("Professores: " + this.professores.getProfessores());
-//    }
+    public void getProfessoresPorDisciplina(String disciplina){
+        System.out.println("Professores com mesma disciplina: " + this.professores.getProfessoresDeUmaDisciplina(disciplina) + "\n");
+    }
+    public void getProfessoresPorTempo(String tempoDeCasa){
+        System.out.println("Professores com mesmo tempo de casa: " + this.professores.getProfessoresComMesmoTempoDeCasa(tempoDeCasa) + "\n");
+    }
 
     // Almaxorifado
     public void getEstoque(){
@@ -62,7 +65,6 @@ public class SIG {
         System.out.println("Alocações de salas: ");
         this.imprimirLista(this.infraestrutura.getAlocacaoDasSalas());
     }
-
 
 
     public void getHistoricoDoAluno(String idAluno) {
